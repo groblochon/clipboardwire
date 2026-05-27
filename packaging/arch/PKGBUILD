@@ -1,6 +1,7 @@
 # Maintainer: davefx <davefx@gmail.com>
+# Maintainer: davefx <davefx@gmail.com>
 pkgname=clipboardwire
-pkgver=0.1.0
+pkgver=0.4.6
 pkgrel=1
 pkgdesc='Clipboard-sync hub and client over WebSocket'
 arch=('x86_64')
@@ -12,7 +13,7 @@ backup=('etc/clipboardwire/clipboardwire.env')
 # Replace `source` with a real upstream tarball / git ref before publishing.
 # For local builds, run `makepkg -e` from inside a working tree to skip
 # downloading.
-source=("$pkgname-$pkgver.tar.gz::file://$PWD/../../../target/release-tarball/$pkgname-$pkgver.tar.gz")
+source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v0.4.6.tar.gz")
 sha256sums=('SKIP')
 
 prepare() {
