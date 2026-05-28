@@ -7,7 +7,7 @@ arch=('x86_64')
 url='https://github.com/davefx/clipboardwire'
 license=('GPL-3.0-or-later')
 depends=('libappindicator')
-makedepends=('cargo' 'cmake')
+makedepends=('cargo' 'cmake' 'nasm')
 backup=('etc/clipboardwire/clipboardwire.env')
 # Replace `source` with a real upstream tarball / git ref before publishing.
 # For local builds, run `makepkg -e` from inside a working tree to skip
