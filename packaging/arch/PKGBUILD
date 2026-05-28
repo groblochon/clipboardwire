@@ -5,7 +5,7 @@ pkgdesc="Clipboard-sync hub and client over WebSocket"
 arch=('x86_64')
 url="https://github.com/davefx/clipboardwire"
 license=('GPL-3.0-or-later')
-depends=('libappindicator-gtk3')  # Ajoute d'autres dépendances natives si besoin
+depends=('libappindicator')  # Ajoute d'autres dépendances natives si besoin
 source=("clipboardwire-linux-x86_64::https://github.com/davefx/clipboardwire/releases/download/v$pkgver/clipboardwire-linux-x86_64"
         "clipboardwire.service::https://raw.githubusercontent.com/davefx/clipboardwire/v$pkgver/packaging/systemd/clipboardwire.service"
         "clipboardwire.env.example::https://raw.githubusercontent.com/davefx/clipboardwire/v$pkgver/packaging/clipboardwire.env.example"
@@ -13,7 +13,7 @@ source=("clipboardwire-linux-x86_64::https://github.com/davefx/clipboardwire/rel
         "README.md::$url/raw/v$pkgver/README.md"
         "PROTOCOL.md::$url/raw/v$pkgver/PROTOCOL.md"
 )
-sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP') # Mets les checksums réels si tu veux
+sha256sums=('SKIP') # Mets les checksums réels si tu veux
 
 package() {
     install -Dm755 "$srcdir/clipboardwire-linux-x86_64" "$pkgdir/usr/bin/clipboardwire"
